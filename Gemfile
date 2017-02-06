@@ -17,10 +17,17 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'js-routes'
+gem 'react-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-classnames'
+end
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
-  
+
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
