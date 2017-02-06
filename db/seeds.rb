@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+jean = User.create!(email: "jean@gmail.com", password: "azertyuiop", first_name: "jean", avatar_url: "https://graph.facebook.com/v2.6/10153945596946275/picture?width=64&height=64")
+antoine = User.create!(email: "antoine@gmail.com", password: "azertyuiop", first_name: "antoine", avatar_url: "https://avatars.githubusercontent.com/u/2471555?v=3")
+olivier = User.create!(email: "olivier@gmail.com", password: "azertyuiop", first_name: "olivier", avatar_url: "https://avatars.githubusercontent.com/u/414418?v=3")
+sophie = User.create!(email: "sophie@gmail.com", password: "azertyuiop", first_name: "sophie", avatar_url: "https://avatars.githubusercontent.com/u/6377103?v=3")
+
+c1 = Conversation.create!(user1: jean, user2: antoine)
+c2 = Conversation.create!(user1: jean, user2: olivier)
+c3 = Conversation.create!(user1: jean, user2: sophie)
+c4 = Conversation.create!(user1: antoine, user2: olivier)
+c5 = Conversation.create!(user1: antoine, user2: sophie)
+c6 = Conversation.create!(user1: olivier, user2: sophie)
+
+m1 = Message.create!(user: jean, conversation: c1, content: "Salut, j'ai besoin d'une perceuse ce week-end, la tienne est-elle dispo ?")
+m2 = Message.create!(user: jean, conversation: c2, content: "Salut, j'ai besoin d'une perceuse ce week-end, la tienne est-elle dispo ?")
+m3 = Message.create!(user: jean, conversation: c3, content: "Salut, j'ai besoin d'une perceuse ce week-end, la tienne est-elle dispo ?")
+m4 = Message.create!(user: antoine, conversation: c1, content: "Salut jean, malheureusement je ne suis pas là ce week-end... Une autre fois peut-être!")
+m5 = Message.create!(user: olivier, conversation: c2, content: "Hello jean, j'aimerais beaucoup te la prêter mais elle est en réparation...")
+m6 = Message.create!(user: sophie, conversation: c3, content: "Oui pas de problème passe vendredi entre 19h et 21h!")
+m7 = Message.create!(user: antoine, conversation: c4, content: "Salut olivier")
+m8 = Message.create!(user: antoine, conversation: c5, content: "Salut sophie")
+m9 = Message.create!(user: olivier, conversation: c6, content: "Hey!")
+m10 = Message.create!(user: olivier, conversation: c4, content: "Hello")
+m11 = Message.create!(user: sophie, conversation: c5, content: "Quoi de neuf ?")
+m12 = Message.create!(user: sophie, conversation: c6, content: "Tu fais quoi demain ?")
