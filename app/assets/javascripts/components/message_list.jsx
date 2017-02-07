@@ -1,5 +1,5 @@
 var MessageList = React.createClass({
-  render: {
+  render: function() {
     return(
       <div className="messages flexbox-columns-end flex-item">
         <% @selected_conversation.messages.order(created_at: :asc).each do |message| %>
@@ -15,6 +15,6 @@ var MessageList = React.createClass({
           </div>
         <% end %>
       </div>
-  )
+    )
   }
 })
