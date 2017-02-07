@@ -19,7 +19,7 @@ var Inbox = React.createclassName({
           <div className="col-sm-8" id="message-list">
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h4><%= @selected_conversation.other_user(current_user).first_name %></h4>
+                <h4>TODO props</h4>
               </div>
               <div className="panel-body fixed-height">
                 <div id="wrapper">
