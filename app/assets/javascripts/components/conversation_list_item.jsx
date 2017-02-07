@@ -2,14 +2,16 @@ var ConversationListItem = React.createClass({
   render: function() {
     return(
       <div className="conversation-link flexbox-start">
-        <span className="flex-item-shrink"><%= image_tag conversation.other_user(current_user).one_avatar_url, className: "avatar-square" %></span>
+        <span className="flex-item-shrink">
+          <img src={"TODO image_url"} className="avatar-square"/>
+        </span>
           <div className="conversation-preview flexbox-columns flex-item">
             <ul className="conversation-header list-unstyled list-inline flex-item">
-              <li><h6><%= conversation.other_user(current_user).first_name %></h6></li>
-              <li className="date"><%= conversation.last_message.created_at.strftime("%b %e") %></li>
+              <li><h6>{"TODO FirstName"}</h6></li>
+              <li className="date">{"TODO date"}</li>
             </ul>
             <div className="message-preview flex-item">
-              <span><%= conversation.last_message.content %></span>
+              <span>{"TODO content"}</span>
             </div>
           </div>
       </div>
