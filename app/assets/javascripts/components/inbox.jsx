@@ -1,4 +1,4 @@
-var Inbox = React.createclassName({
+var Inbox = React.createClass({
   render: function() {
     return (
       <div className="container">
@@ -10,7 +10,7 @@ var Inbox = React.createclassName({
               </div>
               <div className="panel-body fixed-height">
                 <ConversationList
-                  // TODO props
+                  conversations={this.props.conversations}
                 />
                 </div>
               </div>
@@ -23,7 +23,7 @@ var Inbox = React.createclassName({
               <div className="panel-body fixed-height">
                 <div id="wrapper">
                   <MessageList
-                  // TODO props
+                  messages={this.props.messages}
                  />
                 </div>
                 <CreateMessage
