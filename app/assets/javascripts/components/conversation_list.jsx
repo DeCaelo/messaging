@@ -12,6 +12,7 @@ var ConversationList = React.createClass({
       <div className="end-of-messages">
         <p>End of messages</p>
       </div>
+    </div>
     )
   }
 })

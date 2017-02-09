@@ -10,7 +10,7 @@ var MessageListItem = React.createClass({
               <li><h6>{"TODO FirstName"}</h6></li>
               <li className="date">{"TODO date"}</li>
             </ul>
-            <span dangerouslySetHTML={{"TODO content"}}</span>
+            <span dangerouslySetInnerHTML={{__html: "TODO content"}}></span>
         </div>
       </div>
     )
