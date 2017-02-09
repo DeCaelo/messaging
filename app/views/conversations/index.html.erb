@@ -2,27 +2,5 @@
   <%= current_user.unread_conversations_count > 0 ? "(#{@unread_conversations_count}) Inbox" : "Inbox" %>
 <% end %>
 <%= react_component "Inbox",
-    first_name: "Boris",
-    conversations: [
-      {
-        other_user_picture_url: "https://avatars.githubusercontent.com/u/2471555?v=3",
-        other_user_first_name: "Boris",
-        last_message_created_at: "Feb 9",
-        last_message_content: "Oui et toi?"
-      }
-    ],
-    messages: [
-      {
-        other_user_picture_url: "https://graph.facebook.com/10152948868146275/picture",
-        other_user_first_name: "Edward",
-        last_message_created_at: "Feb 9, 9:34am",
-        last_message_content: "Hello ça va"
-      },
-      {
-        other_user_picture_url: "https://avatars.githubusercontent.com/u/2471555?v=3",
-        other_user_first_name: "Boris",
-        last_message_created_at: "Feb 9, 9:40am",
-        last_message_content: "Oui et toi?"
-      }
-    ]
- %>
+  render(template: 'conversations/index.json.jbuilder')
+%>
