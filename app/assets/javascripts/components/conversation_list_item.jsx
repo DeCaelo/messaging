@@ -3,15 +3,15 @@ var ConversationListItem = React.createClass({
     return(
       <div className="conversation-link flexbox-start">
         <span className="flex-item-shrink">
-          <img src={"TODO image_url"} className="avatar-square"/>
+          <img src={this.props.conversation.other_user_picture_url} className="avatar-square"/>
         </span>
           <div className="conversation-preview flexbox-columns flex-item">
             <ul className="conversation-header list-unstyled list-inline flex-item">
-              <li><h6>{"TODO FirstName"}</h6></li>
-              <li className="date">{"TODO date"}</li>
+              <li><h6>{this.props.conversation.other_user_first_name}</h6></li>
+              <li className="date">{this.props.conversation.last_message_created_at}</li>
             </ul>
             <div className="message-preview flex-item">
-              <span>{"TODO content"}</span>
+              <span>{this.props.conversation.last_message_content}</span>
             </div>
           </div>
       </div>

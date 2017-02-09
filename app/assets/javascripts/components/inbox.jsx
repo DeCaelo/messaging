@@ -18,7 +18,7 @@ var Inbox = React.createClass({
           <div className="col-sm-8" id="message-list">
             <div className="panel panel-default">
               <div className="panel-heading">
-                <h4>TODO props</h4>
+                <h4>{this.props.first_name}</h4>
               </div>
               <div className="panel-body fixed-height">
                 <div id="wrapper">
