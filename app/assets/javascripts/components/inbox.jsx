@@ -21,6 +21,7 @@ var Inbox = React.createClass({
                 <ConversationList
                   conversations={this.state.conversations}
                   onConversationSelection={this.handleConversationSelection}
+                  selectedConversationId={this.state.selectedConversationId}
                 />
                 </div>
               </div>
