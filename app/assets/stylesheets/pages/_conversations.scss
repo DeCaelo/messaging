@@ -124,7 +124,7 @@
 }
 .fixed-height {
   height: 75vh;
-  overflow: scroll;
+  //overflow: scroll;
 }
 .scroll {
 }
@@ -218,7 +218,7 @@
 #wrapper {
   min-height: 75vh;
   height: 100%;
-  overflow: scroll;
+  //overflow: scroll;
   padding-bottom: 61px;
   &.focused {
     padding-bottom: 159px;

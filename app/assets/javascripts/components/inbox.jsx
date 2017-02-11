@@ -40,6 +40,7 @@ var Inbox = React.createClass({
                 <CreateMessage
                   onMessageCreation={this.handleMessageCreation}
                   selectedConversationId={this.state.selectedConversationId}
+                  ref="createMessage"
                 />
               </div>
             </div>
@@ -79,6 +80,7 @@ handleMessageCreation: function(conversationId, content) {
           conversations: data.conversations,
           messages: data.messages
         })
+        that.refs.createMessage.handleCancel()
       }
     })
   }
