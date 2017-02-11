@@ -1,6 +1,6 @@
 .conversation-link {
   width: 100%;
-  max-height: 75px;
+  min-height: 75px;
   padding: 5px;
   border-bottom: 1px solid rgb(240, 240, 240);
   overflow: hidden;
@@ -124,7 +124,7 @@
 }
 .fixed-height {
   height: 75vh;
-  //overflow: scroll;
+  overflow: scroll;
 }
 .scroll {
 }
@@ -218,9 +218,54 @@
 #wrapper {
   min-height: 75vh;
   height: 100%;
-  //overflow: scroll;
-  padding-bottom: 61px;
+  overflow: scroll;
+  padding-bottom: 68px;
   &.focused {
     padding-bottom: 159px;
+  }
+  // display: flex;
+  // justify-content: flex-end;
+}
+.addConversation {
+  padding: 3px 6px 1px 8px;
+  background-color: white;
+  border: 1px solid #CBCACB;
+  border-radius: 3px;
+  float: right;
+  color: #808080;
+  margin-top: -2px;
+  &:hover,
+  &:focus,
+  &:active, {
+    background-color: #F5F5F5;
+    cursor: pointer;
+  }
+}
+.firstNameInput {
+  height: 19px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+.user {
+  padding: 10px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  &:hover {
+    background-color: #3A5795;
+    color: white;
+    cursor: pointer;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .user-avatar {
+    flex: 0 0 auto;
+  }
+  .user-name {
+    flex: 1 0 auto;
+    padding-left: 10px;
   }
 }
