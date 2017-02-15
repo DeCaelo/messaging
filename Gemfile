@@ -20,6 +20,8 @@ gem 'autoprefixer-rails'
 gem 'js-routes'
 gem 'react-rails'
 
+gem 'redcarpet'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-classnames'
 end
