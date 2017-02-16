@@ -21,6 +21,8 @@ gem 'js-routes'
 gem 'react-rails'
 
 gem 'redcarpet'
+gem 'pygmentize'
+gem 'sass-pygments-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-classnames'

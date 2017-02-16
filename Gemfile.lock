@@ -118,6 +118,7 @@ GEM
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     puma (3.7.0)
+    pygmentize (0.0.3)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -161,6 +162,8 @@ GEM
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.23)
+    sass-pygments-rails (0.1)
+      railties (>= 3.1)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -215,11 +218,13 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma
+  pygmentize
   rails (= 5.0.1)
   rails-assets-classnames!
   react-rails
   redcarpet
   redis
+  sass-pygments-rails
   sass-rails
   simple_form
   spring
