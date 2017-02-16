@@ -9,11 +9,10 @@ var ConversationList = React.createClass({
                     key={index}
                     onConversationSelection={that.props.onConversationSelection}
                     selectedConversationId={that.props.selectedConversationId}
-                    // TODO props
                   />
         })}
         <div className="end-of-messages">
-          <p>End of messages</p>
+          <p>Made with <i className="fa fa-heart"></i> by Me</p>
         </div>
       </div>
     )
