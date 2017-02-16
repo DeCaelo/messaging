@@ -24,6 +24,8 @@ gem 'redcarpet'
 gem 'pygmentize'
 gem 'sass-pygments-rails'
 
+gem 'kaminari'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-classnames'
 end
